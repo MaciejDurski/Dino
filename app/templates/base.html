@@ -1,133 +1,150 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
 
     <title>Dino - biuro rachunkowe</title>
 
 
-  </head>
-  <body>
-    <section id="nav">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand p-0" href="{{url_for('index')}}">
-                    <div class="logo">
-                        <div class="logo-text">
-                            <p class="name">DINO</p>
-                            <p class="d-name">biuro rachunkowe</p>
-                        </div>
-                        <img class="logo-icon " src="static/images/dino.svg">
+</head>
+<body>
+<section id="nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand p-0" href="{{url_for('index')}}">
+                <div class="logo">
+                    <div class="logo-text">
+                        <p class="name">DINO</p>
+                        <p class="d-name">biuro rachunkowe</p>
                     </div>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="{{url_for('index')}}"><i class="fas fa-home"></i>Start</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{url_for('offer')}}"><i class="fas fa-user"></i>Oferta</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{url_for('about')}}"><i class="fas fa-building"></i>Firma</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{url_for('contact')}}"><i class="fas fa-address-book"></i>Kontakt</a>
-                        </li>
-                    </ul>
+                    <img class="logo-icon " src="{{url_for('static',filename='dino.svg')}}">
                 </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{url_for('index')}}"><i class="fas fa-home"></i>Start</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('offer')}}"><i class="fas fa-user"></i>Oferta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('about')}}"><i class="fas fa-building"></i>Firma</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('contact')}}"><i class="fas fa-address-book"></i>Kontakt</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </section>
+        </div>
+    </nav>
+</section>
 {%block rest%}
-    {%endblock%}
+{%endblock%}
 
-    <section id="footer">
-        <div class="container-fluid ">
-            <div class="background   p-4 ">
-                <div class="container">
-                    <div class="row pt-4 pl-3 pr-3">
-                        <div class="col-lg-4 col-md-6 col-xs-12  text-center ">
+<section id="footer">
+    <div class="container-fluid ">
+        <div class="background   p-4 ">
+            <div class="container">
+                <div class="row pt-4 pl-3 pr-3">
+                    <div class="col-lg-4 col-md-6 col-xs-12  text-center ">
 
 
-
-                            <div class="d-inline-block text-md-left">
-                                <img src="static/images/vectorpaint.svg" class="logo-svg d-flex align-self-center pb-2"><br>
-                                <h7 class="contact-header">Adres firmy</h7>
-                                <ul class="contact-list">
-                                    <li class="contact-item">Biuro Rachunkowe DINO</li>
-                                    <li class="contact-item">ul. Dziewińska 74</li>
-                                    <li class="contact-item">Poznań 60-178</li>
-                                </ul>
-                            </div>
-
+                        <div class="d-inline-block text-md-left">
+                            <a class="" href="{{url_for('index')}}">
+                            <img src="{{url_for('static',filename='vectorpaint.svg')}}"
+                                 class="logo-svg d-flex align-self-center pb-2"><br>
+                                </a>
+                            <h7 class="contact-header">Adres firmy</h7>
+                            <ul class="contact-list">
+                                <li class="contact-item">Biuro Rachunkowe DINO</li>
+                                <li class="contact-item">ul. Dziewińska 74</li>
+                                <li class="contact-item">Poznań 60-178</li>
+                            </ul>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-xs-12 text-center ">
-                            <div class="d-inline-block text-md-left">
-                                <h7 class="contact-header">Kontakt</h7>
-                                <ul class="contact-list">
-                                    <li class="contact-item">tel: 61 86 227 86</li>
-                                    <li class="contact-item">kom. 502 721 831</li>
-                                    <li class="contact-item">email: dino@dino.poznan.pl</li>
-                                </ul>
-                                <h7 class="contact-header">GODZINY OTWARCIA</h7>
-                                <ul class="contact-list">
-                                    <li class="contact-item">pon-pt: 8:00-16:00</li>
-                                    <li class="contact-item">inne terminy do uzgodnienia</li>
-                                </ul>
-                            </div>
 
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-xs-12 text-center ">
+                        <div class="d-inline-block text-md-left">
+                            <h7 class="contact-header">Kontakt</h7>
+                            <ul class="contact-list">
+                                <li class="contact-item">tel: 61 86 227 86</li>
+                                <li class="contact-item">kom. 502 721 831</li>
+                                <li class="contact-item">email: dino@dino.poznan.pl</li>
+                            </ul>
+                            <h7 class="contact-header">GODZINY OTWARCIA</h7>
+                            <ul class="contact-list">
+                                <li class="contact-item">pon-pt: 8:00-16:00</li>
+                                <li class="contact-item">inne terminy do uzgodnienia</li>
+                            </ul>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-xs-12  text-center ">
-                            <div class="d-inline-block text-md-left">
-                                <h7 class="contact-header">DANE FIRMY</h7>
-                                <ul class="contact-list">
-                                    <li class="contact-item">NIP: 7790045784</li>
-                                    <li class="contact-item">REGON: 630182140</li>
-                                </ul>
-                            </div>
 
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-xs-12  text-center ">
+                        <div class="d-inline-block text-md-left">
+                            <h7 class="contact-header">DANE FIRMY</h7>
+                            <ul class="contact-list">
+                                <li class="contact-item">NIP: 7790045784</li>
+                                <li class="contact-item">REGON: 630182140</li>
+                            </ul>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 
-   <button onclick="topFunction()" id="staticBtn"><img class="arrow-down" src="static/images/download.svg"></button>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-    <script src="static/script.js"></script>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
       AOS.init();
-    </script>
 
-    </body>
+</script>
+
+<script>
+      var sPath = window.location.pathname;
+var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+if( sPage!=""){
+    $('.navbar').css('position','relative');
+}
+
+</script>
+
+
+</body>
 </html>

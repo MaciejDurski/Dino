@@ -5,14 +5,13 @@ new simpleParallax(image,
         scale:1.7
     });
 
-
-    staticBtn = document.getElementById("staticBtn");
+        staticBtn = document.getElementById("staticBtn");
 
     var offer = document.getElementById("offer");
 
     window.onscroll = function() {scrollFunction()};
 
-    
+
     function scrollFunction(){
         if (document.body.scrollTop>20||document.documentElement.scrollTop>20)
         {
@@ -32,11 +31,12 @@ new simpleParallax(image,
         }else
         {
             offer.scrollIntoView();
-            
+
         }
 
 
     }
+
 
 
   
