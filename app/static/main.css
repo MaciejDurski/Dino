@@ -177,7 +177,7 @@ body
 {
     
     width: 100%;
-    position: absolute;
+
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
@@ -188,23 +188,25 @@ body
 
 .carousel-caption p
 {
-    color: var(--font-color);
+    color: #dfdfdf;
 }
 .upper-caption
 {
     
-    font-size: 50px;
-    margin: 10px 0px;
+    font-size: 56px;
+    margin: 12px 0px;
     line-height: 50px;
+    font-weight:800;
     
 
 
 }
 .description-caption
 {
-    font-size: 22px;
+    font-size: 26px;
     line-height: 22px;
-    padding-top: 4px;
+    padding-top: 8px;
+    letter-spacing:.2px;
     
     
 }
@@ -216,9 +218,9 @@ body
     color: var(--font-color);
     text-align: center;
     text-decoration: none;
-    width: 95px;
-    height: 32px;
-   
+    width: 105px;
+    height: 42px;
+   font-size:22px;
     padding: 0px;
     
     
